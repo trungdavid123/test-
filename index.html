@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="lib/anime.min.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src='js/script.js' defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+        integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Slutprojekt</title>
+</head>
+
+<body>
+    <div class='Galleri'></div>
+
+    <class class='sokMenu'>
+        <h1>Bildgalleri</h1>
+        <form class='sok'>
+            <input type="text" id='sok' placeholder='Sök efter bilder...'>
+        </form>
+
+        <select id="size-options" name="size-options" required>
+            <option value="" disabled selected>
+                Välj bildstorlek: </option>
+            <option value="w">Liten</option>
+            <option value="c">Mellan</option>
+            <option value="b">Stor</option>
+        </select>
+
+
+        <select id="sort-options" name="sort-options" required>
+            <option value="" disabled selected>
+                Sortera efter: </option>
+            <option value="relevance">Datum</option>
+            <option value="interestingness">interestingness</option>
+            <option value="date-posted-asc">Relevans</option>
+        </select>
+
+
+        <select id="number-options" name="number-options" required>
+            <option value="" disabled selected>
+                Antal bilder: </option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+
+        </select>
+
+        <button class='sokButton'>Sök bilder</button>
+
+        </div>
+
+        <div class='gallery'>
+            <div class='photoContainer'></div>
+        </div>
+
+        <div class="item item1">
+            <svg id="firstSVG" width="50" height="50" viewBox="0 0 306 306" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle class="first-circles" cx="153" cy="73" r="20" stroke="black" stroke-width="7" />
+                <circle class="first-circles" cx="208.833" cy="95.5" r="20" stroke="black" stroke-width="7" />
+                <circle class="first-circles" cx="233" cy="153" r="20" stroke="black" stroke-width="7" />
+                <circle class="first-circles" cx="208.833" cy="208.833" r="20" stroke="black" stroke-width="7" />
+                <circle class="first-circles" cx="153" cy="233" r="20" stroke="black" stroke-width="7" />
+                <circle class="first-circles" cx="96.3333" cy="208.833" r="20" stroke="black" stroke-width="7" />
+                <circle class="first-circles" cx="73" cy="153" r="20" stroke="black" stroke-width="7" />
+                <circle class="first-circles" cx="95.5" cy="97.1667" r="20" stroke="black" stroke-width="7" />
+            </svg>
+        </div>
+</body>
+
+</html>
